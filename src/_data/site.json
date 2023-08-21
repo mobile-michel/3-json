@@ -1,0 +1,10 @@
+{
+    "name": "Pokemons",
+    "description": "Create pages from JSON datas",
+    "authorName": "Michel Maillard",
+    "authorUrl": "https://michelmaillard.ch/",
+    "github": "https://github.com/mobile-michel/basic",
+    "favicon": "https://11ty.recipes/images/meta/favicon.svg",
+    "css": "https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css",
+    "backgroundImage": "https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+}
