@@ -3,3 +3,4 @@
 2. modify package.json
 3. create pokemon.json
 4. create Pokemon pages
+5. create Pokemon list by colors (map + uniq filters)

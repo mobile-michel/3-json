@@ -3,12 +3,15 @@ layout: base
 pagination:
   data: pokemon
   size: 1
-  alias: detail
-permalink: 'pokemon/{{ detail.name | slug }}/index.html'
+  alias: details
+permalink: 'pokemon/{{ details.name | slug }}/index.html'
 ---
+{% assign detail = details %}
 <h1>{{ detail.name }}</h1>
 <p>{{ detail.description }}</p>
 <ul>
  <li>Color: {{ detail.color }}</li>
  <li>Height: {{ detail.height }}</li>
 </ul>
+
+<p>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}"><button class="outline">First page</button></a>{% else %}First page{% endif %} - {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><button class="outline">Previous</button></a>{% else %}Previous{% endif %} - This is page {{ pagination.pageNumber | plus: 1 }} - {% if pagination.href.next %}<a href="{{ pagination.href.next }}"><button class="outline">Next</button></a> {% else %} Next{% endif %} - {% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}"><button class="outline">Last page</button></a>{% else %}Last page{% endif %}</p>

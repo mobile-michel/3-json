@@ -1,0 +1,12 @@
+---
+title: By height
+tags: primary
+layout: base
+date: 2023-08-01
+---
+{% assign height = pokemon | sort: 'height' | reverse %}
+<ul>
+ {%- for species in height %}
+ <li><a href="../pokemon/{{ species.name | slugify }}">{{ species.name }}</a>: {{species.height}}</li>
+ {% endfor -%}
+</ul>
